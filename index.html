@@ -3,215 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #0a192f;
-            color: #ccd6f6;
-        }
-
-        a {
-            color: #64ffda;
-            text-decoration: none;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: #112240;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 1.5em;
-        }
-
-        header nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        header nav ul li {
-            font-size: 1em;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(120deg, #1f2937, #0a192f);
-            color: #64ffda;
-            animation: fadeIn 2s;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Section Styling */
-        section {
-            padding: 50px 20px;
-            margin: 30px auto;
-            max-width: 1200px;
-        }
-
-        h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #64ffda;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .skills, .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #112240;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card h3 {
-            margin: 0 0 10px;
-            color: #64ffda;
-        }
-
-        /* Contact Section */
-        .contact {
-            text-align: center;
-        }
-
-        .contact a {
-            padding: 10px 20px;
-            border: 2px solid #64ffda;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .contact a:hover {
-            background: #64ffda;
-            color: #0a192f;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #112240;
-            color: #8892b0;
-        }
-
-        footer a {
-            color: #64ffda;
-        }
-    </style>
+    <title>Mamatha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Anushka Rao</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <h1>HI THERE! <br> I'M <span>MAMATHA G</span></h1>
+            <div class="profession">Pentester</div>
+            <p>"Cybersecurity is not just a skill; it's a responsibility to protect the digital world."</p>
+            <a href="home.html" class="btn">MORE ABOUT ME</a>
+        </div>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Hello, I'm Anushka Rao!</h1>
-        <p>Cybersecurity Engineer | Ethical Hacker | Problem Solver</p>
+        <!-- Right Section -->
+        <div class="right">
+            <img src="portfolioprofile1.jpg" alt="Benjamin">
+            
+        </div>
     </div>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate cybersecurity engineer specializing in ethical hacking, penetration testing, and network security. My mission is to protect organizations from cyber threats and create a safer digital world.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="card">
-                <h3>Ethical Hacking</h3>
-                <p>Expertise in penetration testing, vulnerability assessment, and social engineering techniques.</p>
-            </div>
-            <div class="card">
-                <h3>Network Security</h3>
-                <p>Proficient in configuring firewalls, intrusion detection, and prevention systems.</p>
-            </div>
-            <div class="card">
-                <h3>Tools</h3>
-                <p>Experience with Wireshark, Nmap, Metasploit, Burp Suite, and Kali Linux.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Port Scanner</h3>
-                <p>A Python-based tool to identify open ports on target machines.</p>
-            </div>
-            <div class="card">
-                <h3>Sniffing and Spoofing</h3>
-                <p>Simulated attacks using Bettercap and Ettercap to understand corporate vulnerabilities.</p>
-            </div>
-            <div class="card">
-                <h3>Automated Network Scanner</h3>
-                <p>An Nmap-based tool to automate network scanning and vulnerability detection.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to work with me or discuss a project, feel free to reach out!</p>
-        <a href="mailto:anushkarao@example.com">Contact Me</a>
-    </section>
-
-    <footer>
-        <p>© 2025 Anushka Rao. Designed with ❤️.</p>
-    </footer>
 </body>
 </html>
