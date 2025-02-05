@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #ffcc00;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 200px;
+            height: 250px;
+            border-radius: 0%;
+            margin-bottom: 70px;
+        }
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: white;
+        }
+        .content {
+            width: 80%;
+            padding: 50px;
+        }
+        .content h1 {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .content p {
+            font-size: 16px;
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between text and line */
+            margin-bottom: 30px;
+        }
+        .content p::before {
+            content: "";
+            width: 10px; /* Adjust the width of the horizontal line */
+            height: 100px; /* Line thickness */
+            flex-grow: 1;
+            background-color: #ffcc00; /* Line color */
+            display: block;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .stats div {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .what-i-do {
+            margin-top: 30px;
+        }
+        .services {
+            display: flex;
+            gap: 20px;
+        }
+        .service {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="portfolioprofile1.jpg" alt="Profile">
+        <nav class="nav">
+            <a href="index1.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Resume</a>
+            <a href="#">Experience</a>
+            <a href="#">Certificates</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>ABOUT ME</h1>
+        <h2><strong>Mamatha G,</strong> Cyber Security / Web Developer </h2>
+        <p class="co">Hey, I’m Mamatha G, a curious, driven, and creative tech enthusiast with a passion for cybersecurity, web development, and business. I’m captivated by the art of solving problems, constantly learning, and transforming ideas into reality with precision and innovation. Whether it’s building secure, seamless websites or strategizing business growth, I’m always exploring new ways to innovate, connect, and make a real impact. I thrive on challenges, and my goal is to create solutions that resonate deeply, leaving a lasting impression on both people and the digital world.</p>
+        <div class="stats">
+            <div>1+<br>Years Experience</div>
+            <div>20+<br>Projects Done</div>
+            <div>10+<br>Happy Clients</div>
+            <div>1K<br>Followers</div>
+        </div>
+        <div class="what-i-do">
+            <div class="services">
+                <div class="service"></div>
+                <div class="service"></div>
+                <div class="service"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
